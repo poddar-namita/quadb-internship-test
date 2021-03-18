@@ -110,10 +110,6 @@ body {
     transition: 0.5s;
 }
 
-/* .slider:checked {
-    background-color: #3dc6c1;
-} */
-
 .slider:checked::before {
     left: 24px;
     background-color: #3dc6c1;
