@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HodLinfo.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <header>
+            <div class="container">
+                <div class="left">
+                    <span class="h1 primary-color">HODLINFO</span><span style="color: white;">.com</span>
+                </div>
+                <div class="center">
+                    <div class="custom-select">
+                        <select name="quote_unit">
+                            <option value="inr">INR</option>
+                            <option value="euro">EURO</option>
+                        </select>
+                    </div>
+                    <div class="custom-select ml-8">
+                        <select name="quote_unit">
+                            <option value="btc">BTC</option>
+                            <option value="xpr">XPR</option>
+                            <option value="eth">ETH</option>
+                            <option value="trx">TRX</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="right">
+                    <button class="btn-round">58</button>
+                    <button class="btn-primary ml-8"><i class="fa fa-paper-plane mr-6"></i>Connect Telegram</button>
+                    <input type="checkbox" class="slider ml-8">
+                </div>
+            </div>
+            <div class="container">
+                <div style="margin-top: 10px;">
+                    <span style="color: gray; margin-top: 10px;">Powered By </span><span
+                        class="primary-color">Finstreet</span>
+                </div>
+
+            </div>
+        </header>
+    </nav>
+
+    <div class="container">
+        <div class="dynamic-table" data-url="/data">
+            <!-- table content goes here -->
+        </div>
+    </div>
+
+    <script src="./retrieveData.js"></script>
+</body>
+
+</html>
