@@ -2,12 +2,14 @@ async function updateTable(root) {
     const table = root.querySelector(".main-table");
     const response = await fetch(root.dataset.url);
     const data = await response.json();
+
+    //JSON Object to JSON Array
     var array = [];
     for (var i in data) {
         array.push([i, data[i]]);
     }
 
-    //clear table
+    //clear table content
     table.querySelector("tbody").innerHTML = "";
 
     //iterate through the object
@@ -15,15 +17,25 @@ async function updateTable(root) {
         table.querySelector("tbody").insertAdjacentHTML(
             "beforeend",
             `<tr>
-                    <td>${i + 1}</td>
-                    <td>${array[i][1].name}</td>
-                    <td>&#8377; ${array[i][1].last}</td>
-                    <td>&#8377; ${array[i][1].buy} / &#8377; ${
-                array[i][1].sell
-            }</td>
-                    <td>${array[i][1].volume}</td>
-                    <td>${array[i][1].base_unit}</td>
-                    </tr>`
+                <td>
+                        ${i + 1}
+                </td>
+                <td>
+                    ${array[i][1].name}
+                </td>
+                <td>
+                    &#8377; ${array[i][1].last}
+                </td>
+                <td>
+                    &#8377; ${array[i][1].buy} / &#8377; ${array[i][1].sell}
+                </td>
+                <td>
+                    ${array[i][1].volume}
+                </td>
+                <td>
+                    ${array[i][1].base_unit}
+                </td>
+            </tr>`
         );
     }
 }
