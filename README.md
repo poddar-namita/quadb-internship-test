@@ -21,7 +21,7 @@
 ## Description
 
 This is a demo of dynamic webpage created usong node.js.
-The data of the table is fetch from a json API.
+The data of the table is fetched from a json API.
 
 #### Technologies
 
@@ -41,7 +41,7 @@ The data of the table is fetch from a json API.
         >> For Linux: Terminal
         >> git clone https://github.com/poddar-namita/quadb-internship-test.git
 
-    > Download and install Node.js from
+    > Download and install Node.js from the link provided in the end.
     > Open command prompt from the location of the project and run the command "node app.js" the server will start, now you can run the app on browser.
     >Note: If you are using Visual Studio Code you can even use the inbuilt terminal to run the server.
 ```
@@ -60,6 +60,6 @@ The data of the table is fetch from a json API.
 
 ## Download link
 
-https://nodejs.org/en/download/
+-   Node.js - https://nodejs.org/en/download/
 
 [Back To The Top](#quadb-tech-internship-test)
